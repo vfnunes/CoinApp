@@ -14,19 +14,12 @@
 			remoteGlobalIDString = D728D1012D6D426000B9AF01;
 			remoteInfo = CoinApp;
 		};
-		D728D1232D6D426100B9AF01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D728D0FA2D6D426000B9AF01 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D728D1012D6D426000B9AF01;
-			remoteInfo = CoinApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D728D1022D6D426000B9AF01 /* CoinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D728D1182D6D426100B9AF01 /* CoinAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D728D1222D6D426100B9AF01 /* CoinAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75BA66E2D6FD07400501532 /* CoinApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CoinApp.xctestplan; path = CoinAppTests/CoinApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -53,11 +46,6 @@
 			path = CoinAppTests;
 			sourceTree = "<group>";
 		};
-		D728D1252D6D426100B9AF01 /* CoinAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CoinAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,22 +63,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D728D11F2D6D426100B9AF01 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D728D0F92D6D426000B9AF01 = {
 			isa = PBXGroup;
 			children = (
+				D75BA66E2D6FD07400501532 /* CoinApp.xctestplan */,
 				D728D1042D6D426000B9AF01 /* CoinApp */,
 				D728D11B2D6D426100B9AF01 /* CoinAppTests */,
-				D728D1252D6D426100B9AF01 /* CoinAppUITests */,
 				D728D1032D6D426000B9AF01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +81,6 @@
 			children = (
 				D728D1022D6D426000B9AF01 /* CoinApp.app */,
 				D728D1182D6D426100B9AF01 /* CoinAppTests.xctest */,
-				D728D1222D6D426100B9AF01 /* CoinAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,29 +133,6 @@
 			productReference = D728D1182D6D426100B9AF01 /* CoinAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D728D1212D6D426100B9AF01 /* CoinAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D728D1332D6D426100B9AF01 /* Build configuration list for PBXNativeTarget "CoinAppUITests" */;
-			buildPhases = (
-				D728D11E2D6D426100B9AF01 /* Sources */,
-				D728D11F2D6D426100B9AF01 /* Frameworks */,
-				D728D1202D6D426100B9AF01 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D728D1242D6D426100B9AF01 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D728D1252D6D426100B9AF01 /* CoinAppUITests */,
-			);
-			name = CoinAppUITests;
-			packageProductDependencies = (
-			);
-			productName = CoinAppUITests;
-			productReference = D728D1222D6D426100B9AF01 /* CoinAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +148,7 @@
 					};
 					D728D1172D6D426100B9AF01 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = D728D1012D6D426000B9AF01;
-					};
-					D728D1212D6D426100B9AF01 = {
-						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = D728D1012D6D426000B9AF01;
 					};
 				};
@@ -215,7 +169,6 @@
 			targets = (
 				D728D1012D6D426000B9AF01 /* CoinApp */,
 				D728D1172D6D426100B9AF01 /* CoinAppTests */,
-				D728D1212D6D426100B9AF01 /* CoinAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +182,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D728D1162D6D426100B9AF01 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D728D1202D6D426100B9AF01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +205,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D728D11E2D6D426100B9AF01 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +212,6 @@
 			isa = PBXTargetDependency;
 			target = D728D1012D6D426000B9AF01 /* CoinApp */;
 			targetProxy = D728D1192D6D426100B9AF01 /* PBXContainerItemProxy */;
-		};
-		D728D1242D6D426100B9AF01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D728D1012D6D426000B9AF01 /* CoinApp */;
-			targetProxy = D728D1232D6D426100B9AF01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -293,7 +227,6 @@
 				INFOPLIST_FILE = CoinApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +253,6 @@
 				INFOPLIST_FILE = CoinApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -467,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinicius.CoinAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinApp";
@@ -477,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -488,38 +423,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinApp";
-			};
-			name = Release;
-		};
-		D728D1342D6D426100B9AF01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vinicius.CoinAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CoinApp;
-			};
-			name = Debug;
-		};
-		D728D1352D6D426100B9AF01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vinicius.CoinAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CoinApp;
 			};
 			name = Release;
 		};
@@ -549,15 +452,6 @@
 			buildConfigurations = (
 				D728D1312D6D426100B9AF01 /* Debug */,
 				D728D1322D6D426100B9AF01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D728D1332D6D426100B9AF01 /* Build configuration list for PBXNativeTarget "CoinAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D728D1342D6D426100B9AF01 /* Debug */,
-				D728D1352D6D426100B9AF01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

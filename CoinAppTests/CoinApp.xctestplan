@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "407B95BB-E165-4477-ADF9-443B4BCB5E6B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CoinApp.xcodeproj",
+      "identifier" : "D728D1012D6D426000B9AF01",
+      "name" : "CoinApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CoinApp.xcodeproj",
+        "identifier" : "D728D1172D6D426100B9AF01",
+        "name" : "CoinAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
