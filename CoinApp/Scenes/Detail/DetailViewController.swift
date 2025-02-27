@@ -109,10 +109,10 @@ extension DetailViewController: DetailDisplaying {
     func configureDetailView(_ detailDTO: DetailDTO) {
         exchangeIdLabel.text = detailDTO.exchangeId
         nameLabel.text = detailDTO.name
-        rankLabel.text = "Rank: \(detailDTO.rank)"
-        websiteLabel.text = "Website: \(detailDTO.website)"
-        volume1hrsUsdLabel.text = "Volume 1 Hour USD: \(detailDTO.volume1hrsUsd)"
-        volume1dayUsdLabel.text = "Volume 1 Day USD: \(detailDTO.volume1dayUsd)"
-        volume1mthUsdLabel.text = "Volume 1 Month USD: \(detailDTO.volume1mthUsd)"
+        rankLabel.text = detailDTO.rank
+        websiteLabel.text = detailDTO.website
+        volume1hrsUsdLabel.text = detailDTO.volume1hrsUsd
+        volume1dayUsdLabel.text = detailDTO.volume1dayUsd
+        volume1mthUsdLabel.text = detailDTO.volume1mthUsd
     }
 }

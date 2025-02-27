@@ -75,7 +75,7 @@ final class HomePresenterTests: XCTestCase {
         XCTAssertEqual(doubles.displaySpy.configureViewModelsCallsCount, 1)
         XCTAssertEqual(doubles.displaySpy.configureViewModelsReceivedInvocations.first?.first?.exchangeId, "any-exchange-id")
         XCTAssertEqual(doubles.displaySpy.configureViewModelsReceivedInvocations.first?.first?.name, "any-name")
-        XCTAssertEqual(doubles.displaySpy.configureViewModelsReceivedInvocations.first?.first?.volume1DayUsd, "3.0")
+        XCTAssertEqual(doubles.displaySpy.configureViewModelsReceivedInvocations.first?.first?.volume1DayUsd, "$3.00")
     }
     
     func testShowExchangeDetail_ShouldCallShowExchangeDetailOnCoordinator() {

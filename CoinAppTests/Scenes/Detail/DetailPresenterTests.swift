@@ -5,11 +5,11 @@ private final class DetailCoordinatorSpy: DetailCoordinating { }
 
 private final class DetailDisplaySpy: DetailDisplaying {
     private(set) var configureDetailViewCallsCount = 0
-    private(set) var configureDetailViewReceivedInvocations: [Exchange] = []
+    private(set) var configureDetailViewReceivedInvocations: [DetailDTO] = []
     
-    func configureDetailView(_ exchange: Exchange) {
+    func configureDetailView(_ detailDTO: DetailDTO) {
         configureDetailViewCallsCount += 1
-        configureDetailViewReceivedInvocations.append(exchange)
+        configureDetailViewReceivedInvocations.append(detailDTO)
     }
 }
 
@@ -30,12 +30,12 @@ final class DetailPresenterTests: XCTestCase {
         
         XCTAssertEqual(doubles.displaySpy.configureDetailViewCallsCount, 1)
         XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.exchangeId, "any-exchange-id")
-        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.rank, 1)
+        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.rank, "Rank: 1")
         XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.name, "any-name")
-        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.website, "any-website")
-        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.volume1hrsUsd, 2.0)
-        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.volume1dayUsd, 3.0)
-        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.volume1mthUsd, 4.0)
+        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.website, "Website: any-website")
+        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.volume1hrsUsd, "Volume 1 Hour USD: $2.00")
+        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.volume1dayUsd, "Volume 1 Day USD: $3.00")
+        XCTAssertEqual(doubles.displaySpy.configureDetailViewReceivedInvocations.first?.volume1mthUsd, "Volume 1 Month USD: $4.00")
     }
 }
 
